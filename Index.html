@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        button[data-info]:hover::after {
+            z-index: 5;
+            content: attr(data-info);
+            position: absolute;
+            color: black;
+            width: 400px;
+            line-height: 1rem;
+            padding-left: 6rem;
+            padding-right: 2rem;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            font-style: italic;
+            font-weight: 600;
+            top: 50%;
+            left: 100%;
+            background-image: url('scroll.png');
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid row">
+        <div class="col-2" id="others">
+            <!-- <select name="hello" id="">
+                <option value="1">1</option>
+                <option value="1 " selected disabled hidden>8</option>
+            </select> -->
+        </div>
+        <div class="col-10" id="list"></div>
+    </div>
+    <script src="movies.js"></script>
+    <script src="Script.js"></script>
+</body>
+
+</html>
